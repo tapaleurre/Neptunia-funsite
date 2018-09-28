@@ -14,6 +14,13 @@ body, html {height: 100%}
     background-position: center;
     background-size: cover;
 }
+.modal-img{
+	max-width: 100%;
+	max-height: 500px;
+	margin-left: auto;
+    margin-right: auto;
+	display: block;
+}
 </style>
 <body>
 
@@ -23,13 +30,72 @@ body, html {height: 100%}
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('mages').style.display='block'" class="w3-button w3-black">MAGES.</button></p>
-    <p><button onclick="document.getElementById('adventure').style.display='block'" class="w3-button w3-black">HDN Adventure</button></p>
+    <p><button onclick="document.getElementById('adventure').style.display='block'" class="w3-button w3-black">HDN Adventure</button></p>    
+	<p><button onclick="document.getElementById('community').style.display='block'" class="w3-button w3-black">Community</button></p>
   </div>
+  
   <div class="w3-display-bottomleft w3-container">
 	<p class="w3-xlarge">Contact me</p>
     <p class="w3-large">On discord: Noiregya#1111</p>
     <p class="w3-large">By email: noiregya@gmail.com</p>
-    <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </div>
+</div>
+
+<div id="mages" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('mages').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>MAGES. bot</h1>
+    </div>
+    <div class="w3-container">
+      <h5>MAGES. is a neptunia character, but also an awesome discord bot! It will offer a self assigning role system and a console war feature!</h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>MAGES. website</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Find the official website by clicking on her face.</h5>
+	  <a href="http://mages-bot.alwaysdata.net/"><img class="modal-img" src="img/magesbanner.jpg" alt="MAGES."></a>
+    </div>
+	<div class="w3-container w3-black">
+      <h1>MAGES. in action</h1>
+    </div>
+    <div class="w3-container">
+      <h5>MAGES. is being beta tested on Ultradimension Neptunia, join it to see it in action!</h5>
+	  <a href="https://discord.gg/ak8fXzW"><img class="modal-img" src="img/UDNLogo.png" alt="UDNLogo"></a>
+    </div>
+  </div>
+</div>
+
+<div id="adventure" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('adventure').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Hyperdimension Neptunia Adventure</h1>
+    </div>
+    <div class="w3-container">
+      <h5>Hyperdimension Neptunia Adventure is a <b>text-based adventure game</b>, in multiplayer that you can play directly on Discord!</h5>
+    </div>
+    <div class="w3-container w3-black">
+      <h1>How to play</h1>
+    </div>
+    <div class="w3-container">
+      <h5>The game wasn't released yet, did you travel through time and dimensions?</h5>
+    </div>
+  </div>
+</div>
+
+<div id="community" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom">
+    <div class="w3-container w3-black w3-display-container">
+      <span onclick="document.getElementById('community').style.display='none'" class="w3-button w3-display-topright w3-large">x</span>
+      <h1>Hyperdimension neptunia on discord.</h1>
+    </div>
+    <div class="w3-container">
+      <h5>This server is a great community that will fulfill all your nep needs!</h5>
+      <h5>Join the server by clicking the pudding.</h5>
+	  <a href="https://discord.gg/bqAErqu"><img class="modal-img" src="img/pudding.jpg" alt="Pudding"></a>
+    </div>
   </div>
 </div>
 

@@ -11,8 +11,12 @@ body, html {height: 100%}
 .bgimg {
     background-color:#212137;
     min-height: 100%;
+	min-width: 100%;
     background-position: center;
     background-size: cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .modal-img{
 	max-width: 100%;
@@ -25,9 +29,9 @@ body, html {height: 100%}
 <body>
 
 <div class="bgimg w3-display-container w3-text-white">
-	<img class="modal-img" src="img/weblogo.png"/>
+<img class="modal-img" src="img/weblogo.png"/>
   <div class="w3-display-middle w3-jumbo">
-    <p>NOIREGYAAAAAAAA</p>
+    <!-- <p>LOGO</p> -->
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('mages').style.display='block'" class="w3-button w3-black">MAGES.</button></p>

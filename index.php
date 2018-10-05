@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html>
-<title>NOIREGYAAAAAAAA</title>
+<head>
+    <script src="js/jquery.js"></script>
+<?php
+    echo "<title>NOIREGYAAAAAAAA</title>";
+	$log_file_name = 'mylog.log'; // Change to the log file name
+	//var_dump($_POST);// incoming message
+	//file_put_contents($log_file_name, $variable, FILE_APPEND);
+	//<!--
+            // get user details
+        $user_agent = $_SERVER['HTTP_USER_AGENT']; //user browser
+        $ip_address = $_SERVER["REMOTE_ADDR"];     // user ip adderss
+        $page_name = $_SERVER["SCRIPT_NAME"];      // page the user looking
+        $query_string = $_SERVER["QUERY_STRING"];   // what query he used
+        $current_page = $page_name."?".$query_string; 
+
+		// get time
+        date_default_timezone_set('Europe/Paris');
+        $date = date("Y-m-d");
+        $time = date("H:i:s");
+         //-->	
+		$string = '==== New connection at '.$time.' on the '.$date."\r\n".$user_agent."\r\n".$ip_address."\r\n".$page_name."\r\n".$query_string."\r\n";
+		file_put_contents($log_file_name, $string, FILE_APPEND);
+?>
+	  <form id= "form1" action = "<?php $_PHP_SELF ?>" method = "POST">
+         <input id="varinput" type = "hidden" name = "variable" value= "unset"/>
+</form>
+	  <script>	
+	  $variable = "Agent: ";
+	  document.getElementById('varinput').value = $variable;
+	  </script>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
@@ -26,6 +56,7 @@ body, html {height: 100%}
 	display: block;
 }
 </style>
+</head>
 <body>
 
 <div class="bgimg w3-display-container w3-text-white">
@@ -98,8 +129,9 @@ body, html {height: 100%}
     </div>
     <div class="w3-container">
       <h5>This server is a great community that will fulfill all your nep needs!</h5>
-      <h5>Join the server by clicking the pudding.</h5>
-	  <a href="https://discord.gg/bqAErqu"><img class="modal-img" src="img/pudding.jpg" alt="Pudding"></a>
+      <h5>Join the server by clicking the banner.</h5>
+	  <a href="https://discord.gg/bqAErqu"><img class="modal-img" src="img/HDN_Logo_smol.png" alt="HDN_Banner"></a>
+	  <a href="img/HDN_Logo.png">I made this, click here for full size</a>
     </div>
   </div>
 </div>

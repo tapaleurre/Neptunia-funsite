@@ -5,6 +5,7 @@
 <?php
     echo "<title>NOIREGYAAAAAAAA</title>";
 	$log_file_name = 'mylog.log'; // Change to the log file name
+	$myfile = fopen("testfile.txt", "w");
 	//var_dump($_POST);// incoming message
 	//file_put_contents($log_file_name, $variable, FILE_APPEND);
 	//<!--

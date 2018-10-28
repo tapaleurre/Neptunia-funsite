@@ -68,7 +68,8 @@ body, html {height: 100%}
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('mages').style.display='block'" class="w3-button w3-black">MAGES.</button></p>
     <p><button onclick="document.getElementById('adventure').style.display='block'" class="w3-button w3-black">HDN Adventure</button></p>    
-	<p><button onclick="document.getElementById('community').style.display='block'" class="w3-button w3-black">Community</button></p>
+	<p><button onclick="document.getElementById('community').style.display='block'" class="w3-button w3-black">Community</button></p> 
+	<p><button onclick="document.getElementById('anime_session').style.display='block'" class="w3-button w3-black">Anime session</button></p>
   </div>
   
   <div class="w3-display-bottomleft w3-container">

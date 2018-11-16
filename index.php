@@ -4,16 +4,6 @@
     <script src="js/jquery.js"></script>
 <?php
     echo "<title>NOIREGYAAAAAAAA</title>";
-
-    switch ($_GET['page']) {
-      case 'anime':
-        echo "ANIMUUUUUUUUU";
-        break;
-
-      default:
-        // code...
-        break;
-    }
 	//$log_file_name = 'mylog.log'; // Change to the log file name
 	//$myfile = fopen("testfile.txt", "w");
 	//var_dump($_POST);// incoming message
@@ -40,8 +30,6 @@
 	  <script>
 	  $variable = "Agent: ";
 	  document.getElementById('varinput').value = $variable;
-    //====== Redirections ======
-    document.getElementById('anime_session').style.display='none';//Redirect
 	  </script>
 
 <meta charset="UTF-8">
@@ -165,7 +153,27 @@ body, html {height: 100%}
     </div>
   </div>
 </div>
-
+<script>
+<?php
+switch ($_GET['page']) {//Redirections
+  case 'anime':
+    echo "document.getElementById('anime_session').style.display='none'";
+    break;
+  case 'community':
+    echo "document.getElementById('anime_session').style.display='none'";
+    break;
+  case 'adventure':
+    echo "document.getElementById('anime_session').style.display='none'";
+    break;
+  case 'mages':
+    echo "document.getElementById('anime_session').style.display='none'";
+    break;
+  default:
+    // code...
+    break;
+}
+?>
+</script>
 <!-- Rei I love you!
 			-Noiregya-->
 

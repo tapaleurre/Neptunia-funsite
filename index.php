@@ -75,7 +75,7 @@ body, html {height: 100%}
   <div class="w3-display-bottomleft w3-container">
 	<p class="w3-xlarge">Contact me</p>
     <p class="w3-large">On discord: Noiregya#1111</p>
-    <p class="w3-large">By email: noiregya@gmail.com</p>
+    <p class="w3-large">By email:<a href="mailto:noire@gya.services">noire@gya.services</a></p>
   </div>
 </div>
 
@@ -93,14 +93,14 @@ body, html {height: 100%}
     </div>
     <div class="w3-container">
       <h5>Find the official website by clicking on her face.</h5>
-	  <a href="http://mages-bot.alwaysdata.net/"><img class="modal-img" src="img/magesbanner.jpg" alt="MAGES."></a>
+	  <a href="http://mages.gya.services/"><img class="modal-img" src="img/magesbanner.jpg" alt="MAGES."></a>
     </div>
 	<div class="w3-container w3-black">
       <h1>MAGES. in action</h1>
     </div>
     <div class="w3-container">
       <h5>MAGES. is being beta tested on Ultradimension Neptunia, join it to see it in action!</h5>
-	  <a href="https://discord.gg/ak8fXzW"><img class="modal-img" src="img/UDNLogo.png" alt="UDNLogo"></a>
+	  <a href="https://discord-ultradimension.gya.services/"><img class="modal-img" src="img/UDNLogo.png" alt="UDNLogo"></a>
     </div>
   </div>
 </div>
@@ -132,7 +132,7 @@ body, html {height: 100%}
     <div class="w3-container">
       <h5>This server is a great community that will fulfill all your nep needs!</h5>
       <h5>Join the server by clicking the banner.</h5>
-	  <a href="https://discord.gg/bqAErqu"><img class="modal-img" src="img/HDN_Logo_smol.png" alt="HDN_Banner"></a>
+	  <a href="https://discord-hyperdimension.gya.services/"><img class="modal-img" src="img/HDN_Logo_smol.png" alt="HDN_Banner"></a>
 	  <a href="img/HDN_Logo.png">I made this, click here for full size</a>
     </div>
   </div>
@@ -149,7 +149,7 @@ body, html {height: 100%}
 <!--<iframe src="http://free.timeanddate.com/countdown/i6hasf7a/n195/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Event%20in/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mpc000/iso2018-10-30T20:30:00" allowTransparency="true" frameborder="0" width="181" height="69"></iframe> -->
 
 
-	  <a href="http://rabbit.gya.neptunia.chat/">Join session!</a>
+	  <a href="http://rabbit.gya.services/">Join session!</a>
     </div>
   </div>
 </div>

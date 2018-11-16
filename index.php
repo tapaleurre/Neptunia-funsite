@@ -22,7 +22,7 @@
         $time = date("H:i:s");
          //-->
 		$string = '==== New connection at '.$time.' on the '.$date."\r\n".$user_agent."\r\n".$ip_address."\r\n".$page_name."\r\n".$query_string."\r\n";
-		file_put_contents($log_file_name, $string, FILE_APPEND);
+		//file_put_contents($log_file_name, $string, FILE_APPEND);
 ?>
 	  <form id= "form1" action = "<?php $_PHP_SELF ?>" method = "POST">
          <input id="varinput" type = "hidden" name = "variable" value= "unset"/>
@@ -157,16 +157,16 @@ body, html {height: 100%}
 <?php
 switch ($_GET['page']) {//Redirections
   case 'anime':
-    echo "document.getElementById('anime_session').style.display='none'";
+    echo "document.getElementById('anime_session').style.display='block'";
     break;
   case 'community':
-    echo "document.getElementById('anime_session').style.display='none'";
+    echo "document.getElementById('anime_session').style.display='block'";
     break;
   case 'adventure':
-    echo "document.getElementById('anime_session').style.display='none'";
+    echo "document.getElementById('anime_session').style.display='block'";
     break;
   case 'mages':
-    echo "document.getElementById('anime_session').style.display='none'";
+    echo "document.getElementById('anime_session').style.display='block'";
     break;
   default:
     // code...

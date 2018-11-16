@@ -160,13 +160,13 @@ switch ($_GET['page']) {//Redirections
     echo "document.getElementById('anime_session').style.display='block'";
     break;
   case 'community':
-    echo "document.getElementById('anime_session').style.display='block'";
+    echo "document.getElementById('community').style.display='block'";
     break;
   case 'adventure':
-    echo "document.getElementById('anime_session').style.display='block'";
+    echo "document.getElementById('adventure').style.display='block'";
     break;
   case 'mages':
-    echo "document.getElementById('anime_session').style.display='block'";
+    echo "document.getElementById('mages').style.display='block'";
     break;
   default:
     // code...

@@ -4,8 +4,18 @@
     <script src="js/jquery.js"></script>
 <?php
     echo "<title>NOIREGYAAAAAAAA</title>";
-	$log_file_name = 'mylog.log'; // Change to the log file name
-	$myfile = fopen("testfile.txt", "w");
+
+    switch ($_GET['page']) {
+      case 'anime':
+        echo "ANIMUUUUUUUUU";
+        break;
+
+      default:
+        // code...
+        break;
+    }
+	//$log_file_name = 'mylog.log'; // Change to the log file name
+	//$myfile = fopen("testfile.txt", "w");
 	//var_dump($_POST);// incoming message
 	//file_put_contents($log_file_name, $variable, FILE_APPEND);
 	//<!--
@@ -14,22 +24,24 @@
         $ip_address = $_SERVER["REMOTE_ADDR"];     // user ip adderss
         $page_name = $_SERVER["SCRIPT_NAME"];      // page the user looking
         $query_string = $_SERVER["QUERY_STRING"];   // what query he used
-        $current_page = $page_name."?".$query_string; 
+        $current_page = $page_name."?".$query_string;
 
 		// get time
         date_default_timezone_set('Europe/Paris');
         $date = date("Y-m-d");
         $time = date("H:i:s");
-         //-->	
+         //-->
 		$string = '==== New connection at '.$time.' on the '.$date."\r\n".$user_agent."\r\n".$ip_address."\r\n".$page_name."\r\n".$query_string."\r\n";
 		file_put_contents($log_file_name, $string, FILE_APPEND);
 ?>
 	  <form id= "form1" action = "<?php $_PHP_SELF ?>" method = "POST">
          <input id="varinput" type = "hidden" name = "variable" value= "unset"/>
 </form>
-	  <script>	
+	  <script>
 	  $variable = "Agent: ";
 	  document.getElementById('varinput').value = $variable;
+    //====== Redirections ======
+    document.getElementById('anime_session').style.display='none';//Redirect
 	  </script>
 
 <meta charset="UTF-8">
@@ -67,11 +79,11 @@ body, html {height: 100%}
   </div>
   <div class="w3-display-topleft w3-container w3-xlarge">
     <p><button onclick="document.getElementById('mages').style.display='block'" class="w3-button w3-black">MAGES.</button></p>
-    <p><button onclick="document.getElementById('adventure').style.display='block'" class="w3-button w3-black">HDN Adventure</button></p>    
-	<p><button onclick="document.getElementById('community').style.display='block'" class="w3-button w3-black">Community</button></p> 
+    <p><button onclick="document.getElementById('adventure').style.display='block'" class="w3-button w3-black">HDN Adventure</button></p>
+	<p><button onclick="document.getElementById('community').style.display='block'" class="w3-button w3-black">Community</button></p>
 	<p><button onclick="document.getElementById('anime_session').style.display='block'" class="w3-button w3-black">Anime session</button></p>
   </div>
-  
+
   <div class="w3-display-bottomleft w3-container">
 	<p class="w3-xlarge">Contact me</p>
     <p class="w3-large">On discord: Noiregya#1111</p>
@@ -145,9 +157,9 @@ body, html {height: 100%}
       <h1>Join us to watch anime together</h1>
     </div>
     <div class="w3-container">
-      <h5>Hyperdimension neptunia episode 1-4 soon:</h5>
-<iframe src="http://free.timeanddate.com/countdown/i6hasf7a/n195/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Event%20in/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mpc000/iso2018-10-30T20:30:00" allowTransparency="true" frameborder="0" width="181" height="69"></iframe>
-<br><h5>EP 5-8 Coming soon.</h5>
+      <h5>Hyperdimension neptunia episode 5-8 delayed.</h5>
+<!--<iframe src="http://free.timeanddate.com/countdown/i6hasf7a/n195/cf12/cm0/cu4/ct0/cs0/ca0/cr0/ss0/cac000/cpc000/pcfff/tcfff/fs100/szw320/szh135/tatTime%20left%20to%20Event%20in/tac000/tptTime%20since%20Event%20started%20in/tpc000/mac000/mpc000/iso2018-10-30T20:30:00" allowTransparency="true" frameborder="0" width="181" height="69"></iframe> -->
+
 
 	  <a href="http://rabbit.gya.neptunia.chat/">Join session!</a>
     </div>
@@ -159,4 +171,3 @@ body, html {height: 100%}
 
 </body>
 </html>
-

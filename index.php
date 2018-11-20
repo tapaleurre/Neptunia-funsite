@@ -100,7 +100,7 @@ body, html {height: 100%}
     </div>
     <div class="w3-container">
       <h5>MAGES. is being beta tested on Ultradimension Neptunia, join it to see it in action!</h5>
-	  <a href="https://discord-ultradimension.gya.services/"><img class="modal-img" src="img/UDNLogo.png" alt="UDNLogo"></a>
+	  <a href="http://discord-ultradimension.gya.services/"><img class="modal-img" src="img/UDNLogo.png" alt="UDNLogo"></a>
     </div>
   </div>
 </div>
@@ -132,7 +132,7 @@ body, html {height: 100%}
     <div class="w3-container">
       <h5>This server is a great community that will fulfill all your nep needs!</h5>
       <h5>Join the server by clicking the banner.</h5>
-	  <a href="https://discord-hyperdimension.gya.services/"><img class="modal-img" src="img/HDN_Logo_smol.png" alt="HDN_Banner"></a>
+	  <a href="http://discord-hyperdimension.gya.services/"><img class="modal-img" src="img/HDN_Logo_smol.png" alt="HDN_Banner"></a>
 	  <a href="img/HDN_Logo.png">I made this, click here for full size</a>
     </div>
   </div>
